@@ -12,6 +12,12 @@ data_dict = {
     '3': 'indi',
 }   
 
+lendict = len(data_dict)
+print(lendict)
+
 print(data_dict['2'])
 
+<<<<<<< HEAD
 print("\nambil" * 100)
+=======
+>>>>>>> f68a35d (mengubah)
