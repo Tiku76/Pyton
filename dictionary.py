@@ -13,3 +13,5 @@ data_dict = {
 }   
 
 print(data_dict['2'])
+
+print("ambil" * 100)
