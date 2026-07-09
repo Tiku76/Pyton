@@ -13,4 +13,3 @@ data_dict = {
 }   
 
 print(data_dict['2'])
-
