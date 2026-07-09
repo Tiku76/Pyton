@@ -22,3 +22,6 @@ print("saya")
 
 data = (data)
 print(data)
+
+data = data
+print (data)
