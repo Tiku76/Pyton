@@ -13,8 +13,5 @@ data_dict = {
 }   
 
 print(data_dict['2'])
-<<<<<<< HEAD
-=======
 
 print("\nambil" * 100)
->>>>>>> 7682859 (mengubah)
