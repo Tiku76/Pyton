@@ -13,4 +13,7 @@
 # data_bool = 0
 # print(bool,data_bool)
 
-print("ambil\n" * 100)
+# print("ambil\n" * 100)
+
+data = 1,2,3,4
+print(data)
