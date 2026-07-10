@@ -24,12 +24,6 @@ print(lendict)
 # Mengecek key exist ada atau tidak
 print("\n===== MENGECEK KEYS =====")
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-print("\nambil" * 100)
-=======
->>>>>>> f68a35d (mengubah)
-=======
 key = "0"
 checkkey = key in data_dict
 print(f"apakah ada {key} di data_dict {checkkey}")
@@ -97,4 +91,3 @@ for item in kumpulan_data.items():
     
 for key,value in kumpulan_data.items():
     print(f"key = {key}, value = {value}")
->>>>>>> d256daa (mengubah file dictionary dan menambahkan beberapa baris)
