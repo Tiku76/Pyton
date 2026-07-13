@@ -83,6 +83,7 @@ print(values)
 
 print("\n===== ITEM =====")
 
+
 item =kumpulan_data.items()
 print(item)
 
@@ -91,7 +92,42 @@ for item in kumpulan_data.items():
     
 for key,value in kumpulan_data.items():
     print(f"key = {key}, value = {value}")
-<<<<<<< HEAD
-=======
 
->>>>>>> 3e9cf83 (mengubah beberapa)
+print("\n===== DICTIONARY COPY =====")
+
+item = {
+    "1":'sakung',
+    '2':"indi",
+    "3":"ikas",
+    "4":"hadi",
+}
+
+print(f"item = {item}\n")
+
+sebuah_item = item.copy()
+print(f"item = {item}\n")
+print(f"sebuah item = {sebuah_item}\n")
+
+item["1"]= "sakung kung"
+print(f"item = {item}\n")
+print(f"sebuah item = {sebuah_item}\n")
+
+item["2"] = "indi hindia"
+print(f"item {item}\n")
+print(f"sebuah item = {sebuah_item}\n")
+
+
+# pop dictionary
+
+# pop bedasarkan key
+data1 = sebuah_item.pop("2")
+print(f"data 2 = {data1}\n")
+print(f"item = {sebuah_item}\n")
+
+# pop bedasarkan item yang terakhir
+
+dataTerakhir = sebuah_item.popitem()
+print(f"data terakhir = {dataTerakhir}")
+print(f"item = {sebuah_item}\n")
+
+
