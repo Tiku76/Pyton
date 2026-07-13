@@ -145,3 +145,6 @@ print(f"data c = {c}")
 print(f"addres a = {hex(id(a))}")
 print(f"addres b = {hex(id(b))}")
 print(f"addres c = {hex(id(c))}")
+# lihat pada addresnya yang berbeda
+# jadi kesimpulannya jika ingin menduplikat sebuah data
+# alangkah baiknya menngunaka .copy() pada data yang ingin diduplikat

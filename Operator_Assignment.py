@@ -15,6 +15,6 @@
 # a /= 2 # artinya adalah a = a / 2
 # print("nilai a /=2, nilai a menjadi",a)
 
-a = ("ambil")
+a = 2
 a **= 4
 print(a)

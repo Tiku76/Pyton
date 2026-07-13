@@ -10,7 +10,9 @@
 # 2 ** 5 = 32
 # 2 ** 6 = 64
 # 2 ** 7 = 128
-
+# setelah semua hasilnya dipangkatkan setelahnya ditambahkan 
+a = 5
+print(a,format(a,'08b'))
 
 a = 15
 b = 100

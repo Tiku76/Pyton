@@ -91,3 +91,7 @@ for item in kumpulan_data.items():
     
 for key,value in kumpulan_data.items():
     print(f"key = {key}, value = {value}")
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3e9cf83 (mengubah beberapa)

@@ -28,3 +28,8 @@ x = True
 y = True
 z = x ^ y
 print(x, 'xor',y, '=',z)
+
+x = False
+y = False
+z = x ^ y
+print(x, 'xor',y, '=',z)
