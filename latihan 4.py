@@ -3,6 +3,9 @@
 import datetime
 import random
 import string
+import os
+
+os.system("cls")
 
 mahasiswa_template = {
     'nama': 'nama',

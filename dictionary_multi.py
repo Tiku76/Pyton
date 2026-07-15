@@ -48,5 +48,4 @@ for mahasiswa in data_mahasiswa:
     sks = data_mahasiswa[key] ['sks_lulus']
     beasiswa = data_mahasiswa[key]['beasiswa']
     lahir = data_mahasiswa[key]['lahir'].strftime("%x")
-    print(f"{key:^6}")
-    # {nama:<17} {nim:<10} {sks:^3} {beasiswa:^9} {lahir:^10}")
+    print(f"{key:^6} {nama:<17} {nim:<10} {sks:^3} {beasiswa:^9} {lahir:^10}")
