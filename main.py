@@ -25,3 +25,15 @@ print(data)
 
 data = data
 print (data)
+
+
+def input_data(*data):
+    output = 0
+    for angka in data:
+        output += angka
+    return output
+
+angka = list(map(int, input("Masukkan beberapa angka (pisahkan dengan spasi): ").split()))
+
+hasil = input_data(*angka)
+print("Hasil:", hasil)

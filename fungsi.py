@@ -96,3 +96,11 @@ print(fungsi())
 print(fungsi(input4=10))
 
 
+def fungsi(angka_1,angka_2):
+    hasil = angka_1 + angka_2
+    return hasil
+
+hasil = fungsi(angka_1=10,angka_2=90)
+print(hasil)
+
+
