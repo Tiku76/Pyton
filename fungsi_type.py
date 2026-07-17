@@ -63,7 +63,9 @@ fungsi(nama="sakung",tinggi=190,berat=90)
 
 print(f'-'*10,"Contoh study kasus kwargs dan args",'-'*10)
 
+
 def math(*args,**kwargs):
+    
     output = 0 
     if kwargs ["option"] == "tambah":
         for angka in args:
