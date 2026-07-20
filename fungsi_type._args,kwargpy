@@ -1,6 +1,6 @@
 '''Beberapa type dari fungsi'''
 
-'''Type fungsi type hints'''
+'''Type fungsi type hints,args dan kwargs'''
 import os
 import string
 
