@@ -1,3 +1,16 @@
+# import io
+
+# file = io.open("tes.txt", "r")
+# print(file.read())
+
+import tkinter as tk
+
+window = tk.Tk()
+window.configure(bg="black")
+
+window.mainloop()
+
+
 # data_int = 10
 # data_str = float(data_int)
 # print (data_str)
@@ -15,25 +28,25 @@
 
 # print("ambil\n" * 100)
 
-data = 1,2,3,4
-print(data)
+# data = 1,2,3,4
+# print(data)
 
-print("saya")
+# print("saya")
 
-data = (data)
-print(data)
+# data = (data)
+# print(data)
 
-data = data
-print (data)
+# data = data
+# print (data)
 
 
-def input_data(*data):
-    output = 0
-    for angka in data:
-        output += angka
-    return output
+# def input_data(*data):
+#     output = 0
+#     for angka in data:
+#         output += angka
+#     return output
 
-angka = list(map(int, input("Masukkan beberapa angka (pisahkan dengan spasi): ").split()))
+# angka = list(map(int, input("Masukkan beberapa angka (pisahkan dengan spasi): ").split()))
 
-hasil = input_data(*angka)
-print("Hasil:", hasil)
+# hasil = input_data(*angka)
+# print("Hasil:", hasil)
