@@ -3,12 +3,6 @@
 # file = io.open("tes.txt", "r")
 # print(file.read())
 
-import tkinter as tk
-
-window = tk.Tk()
-window.configure(bg="black")
-
-window.mainloop()
 
 
 # data_int = 10
