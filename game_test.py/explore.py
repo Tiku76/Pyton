@@ -1,5 +1,6 @@
 import pygame
 
+'''MEMBUAT GAME KOTAK SEDERHANA'''
 #init
 pygame.init()
 
