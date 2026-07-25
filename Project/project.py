@@ -1,7 +1,7 @@
 '''PROJECT DATABASE PERPUSTATAKAAN'''
 
 import os
-import CRUD
+import CRUD as CRUD
 
 
 if __name__ == "__main__":
@@ -39,12 +39,12 @@ if __name__ == "__main__":
 
         match user_option:
             case "1": CRUD.read_console()
-            case "2": print("create data")
-            case "3": print("update data")
+            case "2": CRUD.create_console()
+            case "3": CRUD.update_console()
             case "4": print("delete data")
             
         is_done = input("apakah selesai? (y/n)")
         
         if is_done == "y" or is_done == "Y":
-            break
+            break  
     print("Program berakhir terimakasih")

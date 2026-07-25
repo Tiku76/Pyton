@@ -1,3 +1,5 @@
-sFbiKH,2026-23-24-16-23-15+0700,barangam,askng,2000
-sFbiKH,2026-23-24-16-23-15+0700,barangam,askng,2000
-sFbiKH,2026-23-24-16-23-15+0700,barangam,askng,2000
+cTfmAn,2026-34-25-13-34-48+0700,sakung,dada,1111
+cTfmAn,2026-34-25-13-34-48+0700,sakung,tara,9999
+cTfmAn,2026-34-25-13-34-48+0700,sakung,indi,2000
+cTfmAn,2026-34-25-13-34-48+0700,sakung,indi,2000
+cTfmAn,2026-34-25-13-34-48+0700,sakung,indi,2000
