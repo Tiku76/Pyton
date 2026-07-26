@@ -1,5 +1,6 @@
-cTfmAn,2026-34-25-13-34-48+0700,sakung,dada,1111
-cTfmAn,2026-34-25-13-34-48+0700,sakung,tara,9999
-cTfmAn,2026-34-25-13-34-48+0700,sakung,indi,2000
-cTfmAn,2026-34-25-13-34-48+0700,sakung,indi,2000
-cTfmAn,2026-34-25-13-34-48+0700,sakung,indi,2000
+cTfmAn,2026-34-25-13-34-48+0700,Hadi,Tara bermain di taman,1989
+cTfmAn,2026-34-25-13-34-48+0700,sakung,Indi biningking,2011
+cTfmAn,2026-34-25-13-34-48+0700,sakung,Indi surindi,1989
+jhgBlc,2026-36-26-02-36-40+0700,Hara,Hadi dengan Hara,2007
+AVxycA,2026-53-26-02-53-57+0700,Ikas,Ikas dengan kakas,1989
+NpedNx,2026-54-26-02-54-22+0700,Sakung,Sakung kung,2013
