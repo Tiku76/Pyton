@@ -26,7 +26,7 @@ class Hero:
         tambahan_armor = random.randint(1, 5)
         self.attackpower += tambahan_attack
         self.armor += tambahan_armor
-        print(f"⬆️ {self.name} UPGRADE! attack +{tambahan_attack} (jadi {self.attackpower}), "f"armor +{tambahan_armor} (jadi {self.armor})")
+        print(f" {self.name} UPGRADE! attack +{tambahan_attack} (jadi {self.attackpower}), "f"armor +{tambahan_armor} (jadi {self.armor})")
 
 
 Balmond = Hero("Balmond",100,50,20)

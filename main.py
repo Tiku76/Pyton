@@ -1,9 +1,12 @@
 # import io
 
-# file = io.open("tes.txt", "r")
+# file = open("tes.txt", "r")
 # print(file.read())
 
-
+class Hero:
+    __private = "private"
+    
+print(Hero)
 
 # data_int = 10
 # data_str = float(data_int)
@@ -44,3 +47,22 @@
 
 # hasil = input_data(*angka)
 # print("Hasil:", hasil)
+
+# class B(Exception):
+#     pass
+
+# class C(B):
+#     pass
+
+# class D(C):
+#     pass
+
+# for cls in [B, C, D]:
+#     try:
+#         raise cls()
+#     except D:
+#         print("D")
+#     except C:
+#         print("C")
+#     except B:
+#         print("B")
