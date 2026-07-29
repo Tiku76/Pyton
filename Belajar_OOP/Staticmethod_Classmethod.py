@@ -57,7 +57,7 @@ class Hero:
     
     @armor.setter
     def armor (self,input):
-        self.__armor = inputf
+        self.__armor = input
         
     @armor.deleter
     def armor(self):

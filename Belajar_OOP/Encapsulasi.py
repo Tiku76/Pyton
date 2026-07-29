@@ -1,7 +1,7 @@
 '''ENCAPSULAI'''
 
 '''Encapsulai adalah sebuah konsep oop yang membungkus atribut (data) dan method dalam satu unit(class)
-sekaligu membatasi akses langsung ke data tersebut dari luar class,tujuannya untuk menjaga supaya data tidak diubah sembarangan'''
+sekaligus membatasi akses langsung ke data tersebut dari luar class,tujuannya untuk menjaga supaya data tidak diubah sembarangan'''
 
 
 class Hero:
