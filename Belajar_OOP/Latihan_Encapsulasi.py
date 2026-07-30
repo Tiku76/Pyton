@@ -21,7 +21,8 @@ class Hero:
         
     @property
     def info(self):
-        return "{} level {}: \n\thealth = {}/{}\n\tattack = {} \n\tarmor = {}".format(self.__name,self.__level,self.__health,self.__healthMax,self.__attPOwer,self.__armor)
+        return f"nama : {self.__name},\n\t level : {self.__level},\n\thealth = {self.__health}/{self.__healthMax}, \n\tPower = {self.__attPOwer},\n\tarmor = {self.__armor}"
+        # return "{} level {}: \n\thealth = {}/{}\n\tattack = {} \n\tarmor = {}".format(self.__name,self.__level,self.__health,self.__healthMax,self.__attPOwer,self.__armor)
     
     @property
     def gainExp(self):
