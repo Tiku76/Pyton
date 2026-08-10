@@ -35,16 +35,17 @@ class Hero:
         self.health = health
     
     def showInfo(self):
-        print("{} dengan health : {}".format( self.name,self.health))
+        print(f"{self.name} dengan health : {self.health}")
+        
 
-class Hero_kekuatan(Hero):
-    def __init__(self,name): # <-- memanggil super classnya
+class Hero_kekuatan(Hero): # <-- memanggil super classnya
+    def __init__(self,name): 
         super().__init__(name,100) # <-- memanggil superclassnya dan menambahakan info objek
         super().showInfo()
         
-        
-class Hero_kelincahan(Hero):
-    def __init__(self, name): # <-- memanggil super classnya
+
+class Hero_kelincahan(Hero): # <-- memanggil super classnya
+    def __init__(self, name): 
         super().__init__(name,200) # <-- memanggil superclassnya dan menambahakan info objek
         super().showInfo()
 

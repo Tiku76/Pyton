@@ -5,11 +5,13 @@ class A:
         self.nama = nama
         self.jumlah = jumlah
     
-    def __repr__(self):
+    def __repr__(self):  # <-- untuk debugging atau menyelesaikan masalah
         return f"Buah : {self.nama} dengan jumlah {self.jumlah}"
     
-    def __str__(self):
-        return f"Buah : {self.nama} dengan jumlah {self.jumlah}"
+    def __str__(self): # <-- unutuk tampilan user
+        return f"Buah : {self.nama} dengan jumlah {self.jumlah}" 
+    
+    # ketika repr tidak dapat didefinisikan atau eror maka akan mengambil dari str untuk ditampilkan
     
     def __add__(self, objek):
         return f"total buah yang dibeli adalah : {self.jumlah + objek.jumlah}"

@@ -60,6 +60,8 @@ class Hero:
         self.__attack = self.__attackPower_pool[self.__level]
         self.__armor = self.__armor_pool[self.__level]
         
+
+
 class Hero_kekuatan(Hero):
     def __init__(self, name):
         super().__init__(name)

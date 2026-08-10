@@ -10,9 +10,11 @@ class Hero:
         self.health = health
         self.attackpower = attackpower
         self.armor = armor
+        
     def serang(self,lawan):
         print(f"{self.name} menyerang {lawan.name}")
         lawan.diserang(self,self.attackpower)
+        
         
     def diserang(self,lawan,attack_power_lawan):
         print(f"{self.name} diserang {lawan.name}")

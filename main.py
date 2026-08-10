@@ -3,10 +3,10 @@
 # file = open("tes.txt", "r")
 # print(file.read())
 
-class Hero:
-    __private = "private"
+# class Hero:
+#     __private = "private"
     
-print(Hero)
+# print(Hero)
 
 # data_int = 10
 # data_str = float(data_int)
@@ -66,3 +66,31 @@ print(Hero)
 #         print("C")
 #     except B:
 #         print("B")
+
+
+
+# umur = input("masukan umur anda : ")
+
+# if umur == type(int):
+#     print("mantap")
+# elif umur == type(str):
+#     print("umur harus angka")
+# # else:
+# #     print("masukan yang bener dong")
+    
+# print(umur)
+# # print(f"umur anda adalah {umur}")
+
+def profil(nama, umur, kota, pekerjaan):
+    print(f"PROFIL {nama}")
+    print(f"Umur : {umur} tahun")
+    print(f"Kota : {kota}")
+    print(f"Pekerjaan : {pekerjaan}")
+
+input_nama = input("masukan nama :")
+input_umur = input("masukan umur :")
+input_kota = input("masukan kota anda :")
+input_pekerjaan = input("masukan pekerjaan anda :")
+
+# panggil fungsi dengan memasukkan variabel input sebagai argumen
+profil(input_nama, input_umur, input_kota, input_pekerjaan)
