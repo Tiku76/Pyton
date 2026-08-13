@@ -1,0 +1,1 @@
+<built-in method strip of str object at 0x000001CE5F47AD30>,14,36,28.00

@@ -16,7 +16,7 @@ class SoalUjian:
         self.daftar_soal = []
         
         random.shuffle(soal_asli)
-        for i in range(10):
+        for i in range(50):
             soal = soal_asli[i]
             data = soal.split("|")
             
@@ -29,20 +29,46 @@ class SoalUjian:
             soal = Soal(pertanyaan,jawaban,jawaban_benar)
             self.daftar_soal.append(soal)
             
+class Siswa:
+    def __init__(self,nama):
+        self.nama = nama
+        self.jawaban_benar = 0
+        self.jawaban_salah = 0
+    def tambah_benar (self):
+        self.jawaban_benar += 1
+        
+    def tambah_salah(self):
+        self.jawaban_salah += 1
+    
+    def hitung_skor(self):
+        total = self.jawaban_benar + self.jawaban_salah
+        if total == 0:
+            return 0 
+        return self.jawaban_benar / total * 100
+    
+    def simpan_riwayat(self,file_riwayat="riwayat_nilai.txt"):
+        skor = self.hitung_skor()
+        with open(file_riwayat, "a") as file:
+            file.write(f"{self.nama},{self.jawaban_benar},{self.jawaban_salah},{skor:.2f}\n")
+
+
 class AplikasiUjianSekolah:
     def __init__(self,file_soal):
         soal_asli = []
-        with open(file_soal, "r") as file:
-            for line in file:
-                soal_asli.append(line.strip())
-                
+        try:
+            with open(file_soal, "r") as file:
+                for line in file:
+                    soal_asli.append(line.strip())
+        except FileNotFoundError:
+            print(f"dile {file_soal} tidak ditemukan")
+            soal_asli = []
         self.soal_ujian = SoalUjian(soal_asli)
         
     def run(self):
         opsi = ["A","B","C","D"]
         
-        jawaban_benar = 0
-        jawaban_salah = 0
+        nama_siswa = input("masukan nama kamu :").strip
+        siswa = Siswa(nama_siswa)
         
         for i in range(len(self.soal_ujian.daftar_soal)):
             soal = self.soal_ujian.daftar_soal[i]
@@ -53,23 +79,30 @@ class AplikasiUjianSekolah:
                 jawaban = soal.jawaban[j]
                 print(opsi[j], ".", jawaban)
                 
-            jawaban_user = input("pilih jawaban (A/B/C/D) :")
+            jawaban_user = input("pilih jawaban (A/B/C/D) :").strip().upper()
+            while jawaban_user not in opsi:
+                print("input tidak valid silahkan pilih A/B/C/D")
+                jawaban_user = input("pilih jawaban A/B/C/D : ").strip().upper()
             jawaban_user_index = opsi.index(jawaban_user)
             jawaban_asli_user = soal.jawaban[jawaban_user_index]
             
             
             if soal.cek_jawaban(jawaban_asli_user):
                 print("jawaban benar")
-                jawaban_benar += 1
+                siswa.tambah_benar()
             else:
                 print("jawaban salah")
-                jawaban_salah += 1
+                siswa.tambah_salah()
                 
+        print()
         print("Hasil Ujian")
-        print("Jawaban benar:", jawaban_benar)
-        print("Jawaban salah:", jawaban_salah)
-        print("Hasil Ujian:", jawaban_benar / (jawaban_benar + jawaban_salah) * 100, "%")
+        print("Nama",siswa.nama)
+        print("Jawaban benar",siswa.jawaban_benar)
+        print("Jawaban benar",siswa.jawaban_salah)
+        print("Hasil ujian",siswa.hitung_skor(),"%")
         
+        siswa.simpan_riwayat()
+        print("Riwayat nilai tersimpan!")
 if __name__ == "__main__":
     app = AplikasiUjianSekolah("bank_soal.txt")
     app.run()
