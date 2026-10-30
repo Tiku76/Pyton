@@ -1,1 +1,3 @@
 <built-in method strip of str object at 0x000001CE5F47AD30>,14,36,28.00
+<built-in method strip of str object at 0x00000201da6a7510>,11,39,22.00
+<built-in method strip of str object at 0x0000019f545b7510>,8,42,16.00
