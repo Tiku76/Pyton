@@ -1,8 +1,8 @@
 # Kalkulator sederhana
 
-print (10*"=")
+print (20*"=")
 print("Selamat datang")
-print (10*"=")
+print (20*"=")
 
 angka_1 = float(input("masukan angka : "))
 operator = input("(+ - * /) :")
@@ -22,4 +22,4 @@ elif operator == "/":
     print(f"hasilnya :{hasil:,}")
 else:
     print("masukan yang bener dong")
-print(10*"=")
+print(20*"=")
